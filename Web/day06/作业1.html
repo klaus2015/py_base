@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #pic{
+            width: 648px;
+            border: 1px solid red;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+        #pic .l{
+            position: absolute;
+            top:50%;
+            margin-top:-20px;
+        }
+        #pic .r{
+            position: absolute;
+            top:50%;
+            margin-top:-20px;
+            right:0;
+        }
+    </style>
+</head>
+<body>
+    <div id="pic">
+        <div class="mid">
+            <img id="img" width="100%" src="imgs/gm1.jpg" alt="">
+        </div>
+        <div class="l">
+            <img id="l" src="imgs/l1.png" alt="">
+        </div>
+        <div id="r" class="r">
+            <img src="imgs/r1.png" alt="">
+        </div>
+    </div>
+    <script>
+        var imgShow = document.getElementById("img")
+        var btnL = document.getElementById("l")
+        var btnR = document.getElementById("r")
+        var i=1
+        
+        btnL.onclick = function(){
+                if(i<=4){
+                    i++;
+                    imgShow.src = "imgs/gm"+i+".jpg";}
+        }
+        btnR.onclick = function(){    
+                if(i>=2){
+                    i--;
+                    imgShow.src = "imgs/gm"+i+".jpg";}
+                    
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+        }
+        #instr{
+            width: 520px;
+            height: 404px;
+            border:0px solid red;
+            margin: 0 auto;
+            background-color: gainsboro;
+        }
+        #instr>div:nth-child(1){
+            width: 146px;
+            height: 146px;
+            border:3px solid #fff;
+            margin: 20px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 2px 2px 5px #ccc;
+            
+        }
+        #instr>div:nth-child(2){
+            text-align: center;
+            font-weight: bold;
+        }
+        #instr>div:nth-child(3){
+            text-align: center;
+            margin: 15px 0;
+        }
+        #instr>div:nth-child(4){
+            text-align: center;
+            font-size: 14px;
+            margin: 15px 0;
+        }
+        #instr>div:nth-child(5){
+            text-align: center;
+            font-size: 13px;
+            margin: 15px 0;
+        }
+        #instr>div:nth-child(6)>ul{
+            float:left;
+        }
+        #instr>div:nth-child(6)>ul>li{
+            float:left;
+            border:0px solid red;
+            text-align:center;
+            margin: 0 7px;
+            padding: 8px 40px;
+        }
+        #instr>div:nth-child(6)>ul>li:nth-child(1){
+            background-color: deepskyblue;
+        }
+        #instr>div:nth-child(6)>ul>li:nth-child(2){
+            background-color: greenyellow;
+        }
+        #instr>div:nth-child(6)>ul>li:nth-child(3){
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+      <!-- 1.添加页面需求的元素 大的块元素包裹6个div -->
+    <!-- 2.编写样式,控制添加好的页面元素 -->
+    <!-- 3.微调编写好的样式,并调优 -->
+    <div id="instr">
+        <div>
+            <img width="146px" src="imgs/img02.png" alt="">
+        </div>
+        <div>budinger</div>
+        <div>Web前端工程师</div>
+        <div>男,北京市</div>
+        <div>这位同学很懒, 什么也没有留下--!</div>
+        <div>
+            <ul>
+                <li>访问主页</li>
+                <li>发消息</li>
+                <li>删除好友</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

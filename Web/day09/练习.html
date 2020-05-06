@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="day09/js/jquery.min.js"></script>
+</head>
+<body>
+    <div id="tip">hello world</div>
+    <!-- 添加一个复选框 id/mary -->
+    <input type="checkbox"
+           checked
+           name="mary" 
+           id="mary">婚否
+    <script>
+         //输出jq对象
+         console.log($("#tip"))
+         console.log(document.getElementById("tip"));
+         console.log($(document.getElementById("tip")));
+         console.log($("#tip")[0]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 清除列表格式 */
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            
+        }
+        #nav{
+            border: 1px solid red;
+            margin: 0 auto;
+            /* width: 353px;
+            height: 41; */
+            overflow: hidden;
+        }
+        /* 尽量用后代选择器查找 */
+        #nav>.tip{
+            float: left;
+            padding: 2px 0;
+        }
+        #nav>ul{
+            float: left;
+        }
+        #nav>ul>li{
+            float: left;
+            /* 控制字体间距 */
+            margin:0 14px;
+            /* 让非默认的文字和选择到的文字(加了一个2px扩大红色下边距)在同一行 */
+            /* 同时加上一个10px和下面选择后变化的状态保持一直,防止渐变 */
+            padding: 2px 10px;
+        }
+        #nav>ul>li:hover{
+            background-color: #f01400;
+            color: #CCC;
+            padding: 2px 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 1.添加页面需求的元素 大的块元素包裹一个div和一个无序列表 -->
+    <!-- 2.编写样式,控制添加好的页面元素 -->
+    <!-- 3.微调编写好的样式,并调优 -->
+    <!-- 元素类似,且内容差别不大,可考虑列表 -->
+    <div id="nav">
+        <div class="tip">难度: </div>
+        <ul>
+            <li>全部</li>
+            <li>初级</li>
+            <li>中级</li>
+            <li>高级</li>
+        </ul>
+    </div>
+</body>
+</html>

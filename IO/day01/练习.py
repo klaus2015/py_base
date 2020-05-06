@@ -1,0 +1,1 @@
+s = 'We are happy!'

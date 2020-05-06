@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent{
+            width: 408px;
+            /* 方式1:hight:102px; */
+            border: solid 1px red;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #parent .child{
+            width: 100px;
+            height: 100px;
+            border: dashed 1px #666;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <!-- <!-方法2:清除浮动的元素- <div style="clear:left"></div>  -->
+    </div>
+    <div>
+        今天天气还好
+    </div>
+    
+</body>
+</html>

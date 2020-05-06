@@ -1,0 +1,3 @@
+<div class="video_src_wrapper"><embed data-video="http://tb-video.bdstatic.com/tieba-smallvideo-transcode-cae/31412427_49d0f0075a88628f13e8007cdab92b94_0_cae.mp4"
+
+//div[@class="video_src_wrapper"]/embed/@data-video

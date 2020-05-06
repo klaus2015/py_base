@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h3,h5,p{
+            /* 去除h3和p的默认属性 */
+            margin: 0;
+            padding: 0;
+        }
+        #goods{
+            width: 206px;
+            border: solid 1px #ccc;
+            margin: 0 auto;
+            /* padding: 20px 15px; */
+            padding: 20px 15px;
+        }
+        .top{
+            width: 100%;
+            /* 可以用边框检查图片是否被完全包住 */
+            border: solid 0px red;
+        }
+        .title{
+            /* 加边框查看元素/盒子位置 */
+            border: solid 0px red;
+            text-align: center;
+            padding: 10px 0 8px 0px;
+            background-color: #eee;
+        }
+        .mid{
+            border: solid 0px red;
+            overflow: hidden;
+        }
+        img{
+            /* 将图片完全填充满div块里 */
+            width: 100%;
+        }
+        a:link{
+            color:#666;
+            /* 五下划线 */
+            text-decoration: none;
+            font-size: 13px;
+        }
+        a{
+            margin-right:10px;
+        }
+        .mid>.ll{
+            float:left;
+            width: 100px;
+            text-align: center;
+        }
+        .mid>.rr{
+            float:right;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="goods">
+        <div class="top">
+            <h3>众筹</h3>
+            <div class="img">
+                <img src="imgs/img01.png" alt="">
+            </div>
+            <div class="title">
+                <h3>苹果I-WATCH呼吸表带</h3>
+                <p>一场手腕的呼吸革命</p>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="ll">
+                <img src="imgs/img03.jpg" alt="">
+                <h5>大圣原版手偶</h5>
+            </div>
+            <div class="rr">
+                <img src="imgs/img04.png" alt="">
+                <h5>智能运动鞋</h5>
+            </div>
+        </div>
+        <div class="bottom">
+            <a href="#">智能手表</a>
+            <a href="#">创意新品</a>
+            <a href="#">时尚家居</a>
+            <a href="#" style="color:tomato;">[动漫周边]</a>
+            <a href="#">指纹手机</a>
+        </div>
+    </div>
+</body>
+</html>

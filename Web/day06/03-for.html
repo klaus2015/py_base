@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #result{
+            width: 100px;
+            margin: 0 auto;
+            border: 1px solid #666;
+            background-color: #eee;
+            text-align: center;
+            font-size: 26px;
+        }
+    </style>
+</head>
+<body>
+    <div id="result">
+        0000
+    </div>
+    <script>
+    // //1.使用while计算1-100间的值
+    // var i = 1,s = 0;
+    // while(i<=100){
+    //     s += i; //储存每次累加结果
+    //     i ++;
+    // }
+    // //3.获取指定id的变量,保存在变量中
+    // var re = document.getElementById("result");
+    // re.innerText = s; //将结果显示在指定ID中
+    // ========================================================
+    // do - while
+    // do {
+    //     s += i;
+    //     i ++;
+    // } while (i<=100);
+    // var re = document.getElementById("result");
+    // re.innerText = s;
+    // -------------------------------------------------
+    for (var i = 1,s=0; i <=100; i++) {
+        // if (i == 51)
+        // break;
+        //计算奇数的值
+        if (i % 2==0)continue;
+        s += i;    
+    }
+    var re = document.getElementById("result");
+    re.innerText = s;
+    </script>
+</body>
+</html>

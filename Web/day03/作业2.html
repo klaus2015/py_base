@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #pic{
+            width: 179px;
+            height: 186px;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+        }
+        #pic>div:nth-child(1){
+            background-color: #f35d5c;
+            color:white;
+            /* 默认宽度和父元素一样,用浮动后,自己有多宽就是多宽 */
+            float: left;
+            /* 设置圆角 */
+            border-radius: 0 3px 3px 0;
+            margin-left:3px;
+            /* padding设置的是字体和border直接的距离 */
+            padding: 3px;
+        }
+        #pic>div:nth-child(3){
+            /* 想左移动母婴馆 */
+            margin-left:43px;
+            font-size: 20px;
+        }
+        #pic>div:nth-child(4){
+            text-align: center;
+            font-size: 18px;
+            color: #c9c9c9;
+        }
+        #pic>div:nth-child(5){
+            margin-top: 7px;
+            /* 将块元素中的图片居中 */
+            text-align:center;
+        }
+        #pic>div:nth-child(2){
+            clear:left
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 1.添加页面需求的元素 大的块元素包裹四个子类元素 -->
+    <!-- 2.编写样式,控制添加好的页面元素 -->
+    <!-- 3.微调编写好的样式,并调优 -->
+    <div id="pic">
+        <div>低价</div>
+         <!-- 清除浮动-具体操作提到上面样式里 -->
+         <div></div>
+        <div>母婴馆</div>
+        <div>秒杀低至1元</div>
+        <div>
+            <img src="imgs/img01.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

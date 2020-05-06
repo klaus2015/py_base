@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var num =  123.4563;
+        // //向上取整
+        // console.log(Math.ceil(num)) ; //124
+        // //向下取整数
+        // console.log(Math.floor(num)); //123
+        // //四舍五入
+        // console.log(Math.round(num)); //123
+
+        // //生成0-1之间的随机数
+        // console.log(Math.random()); //0.8145415950464798
+
+        // //生成0-10随机数
+        // console.log(Math.random()*10);//9.965783968495485
+        // console.log(Math.floor(Math.random()*10));//2 生成整数
+
+        //------------------------------------------------------------
+        function createCode(len){
+        //定义一个数组,保存所有可见的字符
+        var arr = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','H','a','b','c','d','e','f','g','h']
+        //  //随机生成一个可以从数组中渠道的下表值
+        //  var index = Math.floor(Math.random()*arr.length);
+        //     //输出随机生成的下标对应的值
+        //     console.log(arr[index]);
+       
+        //随机生成四位验证码
+        var r = '';
+        for (var i=0;i<len;i++){
+            
+            var index = Math.floor(Math.random()*arr.length); 
+            r += arr[index];
+            
+        // }console.log(r.toUpperCase());
+    }
+            return r.toUpperCase();
+    
+}
+    console.log(createCode(11))
+    
+    </script>
+</body>
+</html>

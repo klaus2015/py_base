@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #bg{
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+            margin: 0 auto;
+            background-image: url("imgs/img10.png");
+            /* 不重复平铺 ---大部分都是设置这个属性*/
+            background-repeat:no-repeat;
+            /* 沿X轴重复平铺 */
+            /* background-repeat:repeat-x; */
+
+            /* 设置背景图片的在元素坐标系中的起点坐标 */
+            /* background-position: 30px 30px; */
+            /* 方位值
+	        水平：left/center/right
+	        垂直：top/center/bottom */
+            background-position:center;
+            /* 百分比是相对于背景元素的宽高值而定 */
+            background-size:50% 50%;
+        }
+        #sp1{
+            border: 1px solid red;
+            /* 设置显示背景图片的宽度和高度 */
+            width: 25px;
+            height: 25px;
+            margin: 0 auto;
+            background-image: url("imgs/img07.png");
+            
+        }
+        #sp2{
+            border: 1px solid red;
+            /* 设置显示背景图片的宽度和高度 */
+            width: 25px;
+            height: 25px;
+            margin: 0 auto;
+            background-image: url("imgs/img07.png");
+            background-position: 0 -25px;
+            
+        }
+        #sp3{
+            border: 1px solid red;
+            /* 设置显示背景图片的宽度和高度 */
+            width: 25px;
+            height: 25px;
+            margin: 0 auto;
+            background-image: url("imgs/img07.png");
+            background-position: 0 -50px;
+            
+        }
+        #test{
+            border: 1px solid red;
+            width: 200px;
+            height: 50px;
+            /* line-height = height 设置一行文本在元素中垂直居中 */
+            line-height: 50px;
+            /* 文本内容的水平对齐方式--相对于元素的界面*/
+            text-align: center;
+            /* margin:0 auto;左右自动外边距，实现元素在父元素范围内水平居中 */
+            margin: 0 auto;
+            background-color: #666;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="bg">
+        
+    </div>
+    <!-- 精灵图片spirit -->
+    <div id="sp1"></div>
+    <div id="sp2"></div>
+    <div id="sp3"></div>
+    <div id="test">
+        哈哈哈哈哈哈哈哈
+    </div>
+</body>
+</html>

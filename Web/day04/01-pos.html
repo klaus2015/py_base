@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #666;
+        }
+        /* 在集合中查找某个子类 */
+        /* child(1)指第一个div */
+        /* div:nth-child(1){
+
+        } */
+        div:nth-child(2){
+            /* 元素设置相对定位,可参照元素在文档中的原始位置进行偏移,不会脱离文档流 */
+            position: relative;
+            left:8px;
+        }
+        div:nth-child(3){
+            position: relative;
+            top: -8px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 通过元素的伪类选择器获取相同元素的某个元素 -->
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

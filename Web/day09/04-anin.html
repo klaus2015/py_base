@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #ball{
+            width: 20px;
+            height: 20px;
+            background-color: orangered;
+            border-radius: 50%;
+            position: absolute;
+            top:100px;
+            left: 100px;
+        }
+    </style>
+    <script src="day09/js/jquery.min.js"></script>
+</head>
+<body>
+    <!-- <div>
+        <img id="img" src="day09/imgs/img02.png" alt="">
+    </div>
+    <button id="btn">隐藏</button> -->
+    <!-- 定义一个小球
+         能移动的前提是要脱离文档流
+         变成绝对定位 -->
+    <div id="ball">
+
+    </div>
+    <button id="move">移动</button>
+</body>
+<script>
+    // $("#btn").on("click",function(){
+    //     if($("#btn").text=='隐藏'){
+    //     $("#img").fadeOut(2000,function(){
+    //         $("#btn").text("显示")
+    //     })
+    // }else{
+    //     $("#img").fadeIn(2000,function(){
+    //         $("#btn").text("隐藏")
+    // }
+    // }
+    
+    $("#move").on("click",function(){
+        $("#ball").animate({
+            left:'200px',
+            
+        })
+        setTimeout(function(){
+            $("#ball").animate({
+                top:'10px'
+            })
+        },100)
+        setTimeout(function(){
+            $("#ball").animate({
+                left:'100px'
+            })
+        },200)
+        setTimeout(function(){
+            $("#ball").animate({
+                top:'100px'
+            })
+        },300)
+        setTimeout(function(){
+            $("#ball").fadeOut()
+        },301)
+    })
+    window.onload=function(){
+        alert('原生页面加载完成')
+    }
+    $(function(){
+        alert('页面加载完成')
+    })
+
+
+</script>
+</html>

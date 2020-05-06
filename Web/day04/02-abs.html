@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent{
+            width: 146px;
+            height: 157px;
+            border: 1px solid orangered;
+            margin: 0 auto;
+            /* 设置父元素为相对定位 ,如果不设定,子元素将参照窗口位置偏移*/
+            position: relative;
+        }
+        #parent>#child{
+            width: 146px;
+            height: 28px;
+            background-color:rgba(0,0,255,0.5);
+            position: absolute;
+            /* left:8px; */
+            /* top:5px; */
+            bottom: 0px;
+            color: #fff;
+            text-align: center;
+        }
+        img{
+            /* 子元素可以设置为百分比宽度,百分比是相对它的父元素 */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <img src="imgs/img02.png" alt="">
+        <div id="child">宇宙无敌美少女</div>
+    </div>
+</body>
+</html>

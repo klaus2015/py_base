@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tip">...</div>
+    <script>
+        // 定义一个代名词参数的函数
+        // function hi(name,age){
+        //     return name + ", hello!"
+        // }
+        // // 获取指定ID元素的对象并保存在变量中
+        // var objTip = document.getElementById("tip")
+        // // 设置元素对象中的内容
+        // objTip.innerText = hi('dd',18)
+        // function ab(){
+        //     return 'ok'
+        // }
+        // function cd(){
+        //     return "no"
+        // }
+        // 主流写法
+        // var log={
+        //     ab:function(){
+        //         return "ok"
+        //     },
+        //     cd:function(){
+        //         return "no"
+        //     }
+        // }
+        // document.getElementById("tip").innerText = log.ab();
+        // //---------匿名函数--------------------
+        // (function(name,age){
+        //     var str = name + ", hello";
+        //     var objTip = document.getElementById("tip");
+        //     objTip.innerText = str;
+        // })('dd',18)
+        var c=300; //全局
+        function aa() {
+            // 在函数内,使用var定义的变量是局部变量
+            var c=100;
+            console.log(c); // --100
+        }
+        aa();
+        console.log(c);错// --300
+    </script>
+</body>
+</html>

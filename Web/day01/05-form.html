@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--网页表单-->
+    <!--form负责提交数据给服务器.标签属性:
+    action指定数据的提交地址
+    method指定数据的提交方式,默认为get
+    enctype指定数据的编码方式,默认转换字符串,
+    拼接在URL后面(urlencoded),
+    如果涉及二进制数据(图片,音视频等),必须设置提交方式为post,
+    同时指定编码类型为multipart/form-data
+
+    -->
+    <!--label for id 实现文本与控件的绑定,
+            将label标签的属性for取值为对应控件的id值:
+            1.使用label标签表示文本
+            2.为相应控件添加id标识
+            3.label与控件绑定:for属性值与id属性值保持一致
+            4. 提交的时候必须有name属性才可以提交,否则提交失败-->
+    <!-- # 表示当前页面地址 -->
+    <form action="#">
+        <div>
+            <!-- label for="name"的作用是点击文字也是选择状态 -->
+            <label for="name">姓名: </label>
+            <!--占位符---placeholder-->
+            <input  type="text"
+                    id="name"
+                    placeholder="请输入用户名"
+                    name="name" />
+        </div>
+
+        <div>
+            <label for="pass">密码: </label>
+            <input  type="password"
+                    id="pass"
+                    placeholder="请输入密码"
+                    name="pass" />
+        </div>
+
+        <div>
+            <label for="xl">学历: </label>
+            <!--下拉列表框元素 使用option设置列表选项,value是列表的值-->
+               <select name="xl" id="xl">
+                   <!-- 1对应大学 提交的时候提交的是value的值 -->
+                   <option value="1">大学</option>
+                   <option value="2">中学</option>
+                   <option value="3">小学</option>
+               </select>
+        </div>
+
+        <div>
+            <label for="sex">性别: </label>
+            <!--单选按钮元素,相互排斥,将name属性值设为同一个,radio数量2-3个,没有select多-->
+            <input type="radio"
+                   name="sex"
+                   value="1"
+                   checked
+                   readonly
+                    />男
+            <input type="radio" name="sex" value="2"/>女
+
+        </div>
+
+        <div>
+            <label for="like">爱好: </label>
+            <!-- 多选不相互排斥,name属性值要设为不同 -->
+            <!--提交的时候 like=on 表示选中 -->
+            <input type="checkbox" name="like"/>编程
+            <!-- checked 表示默认选项 -->
+            <input type="checkbox" name="like2" checked/>游戏
+            <input type="checkbox" name="like3" />阅读
+        </div>
+
+        <div>
+            <label for="demo">简介: </label>
+            <!--输入多行多列文本内容-->
+            <textarea name="demo"
+                      id="demo"
+                      cols="30"
+                      rows="10">
+
+            </textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="注册"/>
+            <!-- disable 让按钮失效 -->
+            <input type="reset" disabled value="重置" />
+        </div>
+
+
+    </form>
+</body>
+</html>

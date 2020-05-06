@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <p class="p1">4</p>
+    <p class="p1">5</p>
+    <p class="p1">6</p> -->
+
+    <input type="text">
+    <span>1</span>
+    <span>2</span>
+    <script>
+        // //获取标签名称集合
+        // // var divs = document.getElementsByTagName("div");
+        // // console.log(divs);
+        // // //在控制台中获取第二个div
+        // // console.log(divs[1]);
+        // var ps = document.getElementsByClassName("p1");
+        // console.log(ps)
+        // console.log(ps[1])
+
+        var inputs = document.getElementsByTagName("input");
+        inputs[0].oninput = function(){
+            var spans = document.getElementsByTagName("span");
+            spans[0].innerText = inputs[0].value;
+            spans[1].innerText = inputs[0].value;
+        }
+    </script>
+</body>
+</html>

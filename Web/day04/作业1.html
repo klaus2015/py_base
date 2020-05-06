@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        #dc{
+            width: 254px;
+            height: 156px;
+            background-color: #f8f4ec;
+            border: 0px solid red;
+            margin: 0 auto;
+            position: relative;
+        }
+        #dc>div:nth-child(1){
+            padding: 0 30px;
+            color: #997552; 
+            
+        }
+        #dc>div:nth-child(2){
+            height: 30px;
+            background-color: #997552;
+            color: #fff;
+            font-size: 12px;
+            /* line-height = height; */
+            padding: 5px 15px 10px 110px;
+            margin: 27px 0 0px 0;
+            border: 0px solid red;
+        }
+        #dc>div:nth-child(3){
+            width: 90px;
+            height: 100px;
+            position: relative;
+            top:-55px;
+            left:12px;
+            z-index: 2;
+            border: 0px solid red;
+        }
+        #dc>div:nth-child(3) #name{
+            width: 90px;
+            height: 20px;
+            font-size: 12px;
+            text-align: center;
+            background-color: #997552;
+            position: absolute;
+            bottom: 0;
+        }
+        #dc>div:nth-child(4){
+            color: #696969;
+            font-size: 12px;
+            width: 100px;
+            position: absolute;
+            bottom: 19px;
+            left:120px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="dc">
+        <div>名中医推荐</div>
+        <div>
+            <div>张学智教授谈从脾胃治糖尿病</div>
+            
+        </div>
+        <div>
+            <img src="imgs/img01.png" alt="">
+            <div id="name">张学智</div>
+        </div>
+        <div>北大医学院中医科主任医师</div>
+    </div>
+</body>
+</html> 

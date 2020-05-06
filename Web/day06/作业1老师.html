@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #pics{
+            width: 739px;
+            height: 419px;
+            border:1px solid red;
+            margin: 0 auto;
+            position: relative;
+        }
+        #pics>.lleft{
+            cursor: pointer;
+            position: absolute;
+            left: 0;
+            top:45%;
+        }
+        #pics>.rright{
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            top:45%;
+        }
+    </style>
+</head>
+<body>
+    <div id="pics">
+        <a href="https://www.baidu.com"><img id="img" src="imgs/gm1.jpg" alt=""></a>
+        <div class="lleft">
+            <img src="imgs/l1.png" alt="">
+        </div>
+        <div class="rright">
+                <img src="imgs/r1.png" alt="">
+        </div>
+        </div>
+        <script>
+            //新建一个数组保存全部图片的地址
+            var arrImgs = ['imgs/gm1.jpg','imgs/gm2.jpg','imgs/gm3.jpg','imgs/gm4.jpg','imgs/gm5.jpg'];
+            //获取右侧点击按钮对象
+            var rright=document.getElementsByClassName('rright')[0];
+            //获取显示图片元素对象
+            var img=document.getElementById("img")
+
+            //定义下标变量
+            var index=0;
+            //绑定单击时间
+            rright.onclick=function(){
+                index++;
+                //判断是够超过最大值
+                if(index==arrImgs.length) index=0;
+                
+                // console.log(index)
+                //调用修改属性方法重置图片对象的来源
+                img.setAttribute('src',arrImgs[index]);
+            }
+            //获取左侧点击按钮对象
+            var lleft=document.getElementsByClassName('lleft')[0];
+            lleft.onclick=function(){
+                //判断是否小于0
+                if(index==0) index=arrImgs.length;
+                index--;
+                // console.log(index)   
+                //调用修改属性方法重置图片对象的来源
+                img.setAttribute('src',arrImgs[index]);
+                
+            }
+        </script>
+</body>
+</html>

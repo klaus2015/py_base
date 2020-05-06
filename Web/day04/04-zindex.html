@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #pic{
+            position: relative;
+            width:400px ;
+            height:500px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+        #pic>div:nth-child(1){
+            /* 设置固定位置后,脱离文档流,这个位子会被其他图片占据 */
+            position: absolute;
+            left:50px;
+            top:30px;
+            /* 默认等于1---设为2后不会被后来的覆盖 */
+            /* z-index: 2; */
+        }
+        #pic>div:nth-child(1):hover{
+            /* 设置一个伪类,鼠标移上去后会覆盖后来的图片 */
+            z-index: 2;
+        }
+        #pic>div:nth-child(2){
+            position: absolute;
+            left:150px;
+            top:130px;
+        }
+    </style>
+</head>
+<body>
+    <div id="pic">
+        <div>
+
+            <img src="imgs/img02.png" alt="">
+        </div>
+        <div>
+            <img src="imgs/img02.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

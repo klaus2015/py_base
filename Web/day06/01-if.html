@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #nav{
+            width: 200px;
+            border: 1px solid red;
+            margin: 0 auto;
+
+        }
+        #nav>.title{
+            
+            border-bottom: 1px solid red;
+            padding: 5px 8px;
+            background-color: #eee;
+            /* 将鼠标外形改为手状 */
+            cursor: pointer;
+            /* cursor: move; */
+            
+        }
+        #nav>.content{
+            padding: 8px;
+            display: '';
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="title" onclick="aa()" class="title">程序员的法则</div>
+        <div id="content" class="content">
+            每天都可以写代码
+            每天都可以写代码
+            每天都可以写代码
+            每天都可以写代码
+            每天都可以写代码
+        </div>
+    </div>
+    <script>
+        // //获取到标题和内容对象
+        // var a = document.getElementsByClassName("title")
+        // var b = document.getElementsByClassName("content")
+        //编写代码块
+        function aa(){
+            //获取到标题和内容对象
+            // var a = document.getElementsByClassName("title")[0]
+            var b = document.getElementsByClassName("content")[0]
+            
+            console.log(b);
+            if (b.style.display=="block")
+            {
+                b.style.display="none"
+            }
+            else {
+                b.style.display="block"
+            }
+            console.log(status);
+        }
+        
+    </script>
+</body>
+</html>

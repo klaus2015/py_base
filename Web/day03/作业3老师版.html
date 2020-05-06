@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #instr{
+            width: 520px;
+            height: 404px;
+            border:0px solid red;
+            margin: 0 auto;
+            background-color: #d4cbc6;
+            text-align: center;
+            padding: 10px 0 0 0;
+        }
+        #instr>div:nth-child(1){
+            width: 146px;
+            height: 146px;
+            border:3px solid #fff;
+            margin: 20px auto;
+            border-radius: 50%;
+            box-shadow: 2px 2px 5px #ccc;
+        }
+        #instr>div:nth-child(1)>img{
+            border-radius: 50%;
+        }
+        #instr>div{
+            /* 设置所有div的间距 */
+            margin: 5px 0;
+        }
+        .btns{
+            padding-top:20px ;
+            border: none;
+            outline: none;
+        }
+        .btns>input{
+            width: 135px;
+            height: 40px;
+            margin-right: 5px;
+        }
+        .btns>input:nth-child(1){
+            background-color: #2Ea7E0;
+        }
+        .btns>input:nth-child(2){
+            background-color: #03b803;
+        }
+        .btns>input:nth-child(3){
+            background-color: #cc0003;
+        }
+            
+
+    </style>
+</head>
+<body>
+      <!-- 1.添加页面需求的元素 大的块元素包裹6个div -->
+    <!-- 2.编写样式,控制添加好的页面元素 -->
+    <!-- 3.微调编写好的样式,并调优 -->
+    <div id="instr">
+        <div>
+            <img width="146px" height="146px" src="imgs/img02.png" alt="">
+        </div>
+        <div>budinger</div>
+        <div>Web前端工程师</div>
+        <div>男,北京市</div>
+        <div>这位同学很懒, 什么也没有留下--!</div>
+        <div class="btns">
+            <input type="button" value="访问主页">
+            <input type="button" value="发消息">
+            <input type="button" value="删除好友">
+        </div>
+    </div>
+</body>
+</html>

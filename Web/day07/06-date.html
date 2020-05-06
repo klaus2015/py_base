@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //定义一个日期获取当前时间
+        var dt = new Date(); //参数为空表示当前日期
+        console.log(dt.getFullYear());//获取年
+        console.log(dt.getMonth()+1);//获取月份,从0开始
+        console.log(dt.getDate());//日
+        console.log(dt.getHours());//小时
+        console.log(dt.getMinutes());//分
+        console.log(dt.getSeconds());//秒
+
+        console.log(dt.getTime());
+
+        //国庆节日
+        var dt2 = new Date("2019/10/01 00:00:00");
+        var num = dt2 - dt;//得到两个时间相差的毫秒数
+        console.log(num/1000/3600/24);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        ul li{
+            border-bottom: 1px solid #ccc;
+            padding: 8px 10px;
+
+        }
+        .last{
+            border:none;
+        }
+        span{
+            /* 内联元素无法觉得自己的字体宽度和高度,需转换成块元素才能决定 */
+            display:inline-block;
+            width: 30px;
+            text-align: center;
+            /* 字体默认一般14px */
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #news{
+            width: 834px;
+            padding: 0 15px;
+            border-top:4px solid #ccc;
+            border-left:1px solid #ccc;
+            border-right:1px solid #ccc;
+            border-bottom:1px solid #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="news">
+        <ul>
+            <li><span>1</span>媒体: 勒索病毒还未收场 内幕已经足够惊人</li>
+            <li><span>2</span>媒体: 勒索病毒还未收场 内幕已经足够惊人</li>
+            <li><span>3</span>媒体: 勒索病毒还未收场 内幕已经足够惊人</li>
+            <li class="last"><span>4</span>媒体: 勒索病毒还未收场 内幕已经足够惊人</li>
+        </ul>
+    </div>
+</body>
+</html>

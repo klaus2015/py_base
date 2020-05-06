@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var str = "efgabcde";
+        // //定义一个正则对象1
+        // var reg = /h/ig;
+
+        // //使用对象来定义正则表达式2
+        // /* 修饰符 : 
+        //     i :  ignorecase 忽略大小写
+        //     g : global 全局范围*/
+        // var reg2 = new RegExp("a","ig")
+        // //开始匹配
+        // console.log(reg2.test(str));  //存在返回true,范泽false
+
+        // //第二次查询 s索引为此从4开始
+        // console.log(reg2.test(str));
+        // //如需从头开始查,可以手动调整 lastIndex 为 0。
+        // reg2.lastIndex = 0;
+
+        // //查看下一次匹配的索引位置
+        // console.log(reg2.lastIndex) //4
+        var str = "aacbefag"
+        var reg = /a/ig;
+        var arr = str.match(reg);
+        console.log(arr.toString())
+
+        //将查询后的a替换成i
+        var str2 = str.replace(reg,'i');
+        console.log(str) //aacbefag
+        console.log(str2)  //iicbefig
+    </script>
+</body>
+</html>

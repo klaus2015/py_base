@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       ul{
+           list-style-type: none;
+           padding: 0;
+           margin: 0;
+           width: 100px;
+       }
+       ul>li{
+           border-bottom:dashed 1px #ccc;
+           padding: 10px 5px;
+       }
+    </style>
+    <!-- 导入jq框架 -->
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li>张三</li>
+        <li>李四</li>
+        <li>王五</li>
+        <li>刘八</li>
+        <li>牛九</li>
+    </ul>
+    <button id="btn">隐藏</button>
+    <script>
+        // $("li:eq(2)").css("font-size","30px");
+        // $("li:first,li:last").css("color","red");
+
+        $("li:odd").css("background-color","red");
+        $("li:even").css("background-color","#ccc");
+
+        $("#btn").on("click",function(){
+            if($("#btn").text()=="隐藏")
+            {
+                $("ul").hide(2000,function(){
+                    $("#btn").text("显示")
+                });
+            }
+            else{
+                $("ul").show(2000,function(){
+                    $("#btn").text("隐藏")
+                });
+            }
+        })
+    </script>
+</body>
+</html>

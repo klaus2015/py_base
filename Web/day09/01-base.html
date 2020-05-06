@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 导入jq框架 -->
+    <!-- 一般放最上面,最先解析 -->
+    <script src="day09/js/jquery.min.js"></script>
+    <!-- 1.遇到script-src浏览器首先会寻找目标文件
+         2.下载文件
+         3.解析文件  -->
+</head>
+<body>
+    <div id="tip">hello world</div>
+    <!-- 添加一个复选框 id/mary -->
+    <input type="checkbox"
+           checked
+           name="mary" 
+           id="mary">婚否
+    <script>
+        //输出jq对象
+        console.log($("#tip"))
+        //输出dom对象
+        console.log(document.getElementById("tip"));
+        //转成jq对象
+        console.log($(document.getElementById("tip")));
+        //jq转成原生对象
+        console.log($("#tip")[0]);
+
+        //1.获取jq对象
+        //2.改变元素显示的内容
+        $("#tip").html("<b>今天天气很好</b>");//今天天气很好 字体加粗
+        // $("#tip").text("<b>今天天气很好</b>")//不识别加粗标签--输出结果<b>今天天气很好</b>
+
+
+        // $("tip").attr("id")
+        console.log($("#tip").attr("id")) // 读取标签属性
+
+        //获取jq对象
+        console.log($("#mary").attr("checked")) ;//只看标签属性checked是否书写
+        console.log($("#mary").prop("checked"));//读取或设置表单元素(按钮)的选中状态,选中返回true,没有选中返回false
+        
+    </script>
+</body>
+</html>

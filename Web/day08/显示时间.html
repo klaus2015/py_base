@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 130px;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+            padding: 10px 5px;
+            overflow: hidden;
+        }
+        #box>span{
+            margin: 0;
+            /* display: inline-block; */
+            width: 20px;
+            text-align: center;
+            font-size: 21px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+        <button id="stop">停止</button>
+    <div id="box">
+        
+        <!-- div是块元素,里面如果需要按列排列,用内联元素span -->
+        <span id="hou">00</span>
+        <span style="width:30px">:</span>
+        <span id="miu">00</span>
+        <span style="width:30px">:</span>
+        <span id="sec">00</span>
+    </div>
+    <script>
+        
+        // //定义一个定时器,每隔一秒获取依次时间,并显示
+        // var taskID = setInterval(function(){
+        // var dt = new Date();//获取当前系统时间
+        // document.getElementById("hou").innerText = changeTo(dt.getHours());
+        // document.getElementById("miu").innerText = changeTo(dt.getMinutes());
+        // document.getElementById("sec").innerText = changeTo(dt.getSeconds());
+        // },1000)
+        // //定义一个函数,又以为数字变为两位的函数
+        // function changeTo(n){
+        //     if (n<10){
+        //         return '0'+n;
+        //     }else
+        //     return n;
+        // }
+
+        var taskID3 = setTimeout(function() {
+            console.log("hello")
+        },2000)
+        var taskID4 = setTimeout(function() {
+            console.log("明天会下雨")
+        },4000)
+    </script>
+</body>
+</html>

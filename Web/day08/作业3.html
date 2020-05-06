@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 0;
+            margin: 0;
+        }
+        #num{
+            width: 400px;
+            
+            margin: 0 auto;
+            border: 0px solid red;
+            overflow: hidden;
+        }
+        #num>.nums{
+            border: 0px solid red;
+            float: left;
+        }
+        #num>.nums>span{
+            display: inline-block;
+            background-color: red;
+            border-radius: 50%;
+            color: #fff;
+            padding: 10px 10px;
+            margin: 15px 3px;
+        }
+        #num>.btn{
+            float: right;
+            padding: 10px 10px;
+            margin: 5px;  
+            margin-right: 21px;        
+        }
+        #num>.btn>button{
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0.5px 0.5px 0.5px;
+            font-size: 20px;
+            padding: 5px 10px;
+
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <div id="num">
+        <div class="nums">
+            <span>02</span>
+            <span>11</span>
+            <span>21</span>
+            <span>26</span>
+            <span>28</span>
+            <span>31</span>
+        </div>
+        <div class="btn">
+            <button>换一换</button>
+        </div>
+    </div>
+    <script>
+        var $btn = $(".btn")
+        var $nums = $(".nums")
+        var $spans = $("span")
+        console.log($btn)
+        console.log($nums)
+        console.log($spans)
+    </script>
+</body>
+</html>

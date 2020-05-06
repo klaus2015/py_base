@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li><input type="checkbox"><span>编程语言</span></li>
+        <li><input type="checkbox"><span>JavaScript</span></li>
+        <li><input type="checkbox"><span>Python</span></li>
+        <li><input type="checkbox"><span>C</span></li>
+        <li><input type="checkbox"><span>C#</span></li>
+        <li><input type="checkbox"><span>C</li>
+        <li><input type="checkbox"><span>C#</span></li>
+    </ul>
+    <script>
+        //获取第一个复选框
+        var $chk = $("li:nth-child(1)>input")
+        //获取除第一个以外的复选框
+        var $allCheck = $("li:not(li:nth-child(1))>input");
+        //绑定元素的事件
+        $chk.on("click", function () {
+            console.log($(this).prop("checked"));
+            //全选项本身被选中
+            if ($(this).prop("checked")) {
+                //遍历除第一项外的全部复选框元素
+                $allCheck.each(function (index, elem) {
+                    //获取每一项,并使它处于选中状态
+                    $(elem).prop("checked", true);
+                })
+            } else {
+                $allCheck.each(function (index, elem) {
+                    $(elem).prop("checked", false);
+                })
+            }
+        })
+    </script>
+</body>
+
+</html>

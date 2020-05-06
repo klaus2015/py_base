@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 样式从大到小写 */
+        body{
+            font-size: 13px;
+        }
+        h3{
+            /* 去除h3字体默认样式 */
+            margin: 0;
+            padding: 0;
+        }
+        #lst{
+            overflow: hidden;
+            border: 1px solid red;
+            margin: 0 auto;
+            /* 高度和原图一样,宽度暂时不设置 */
+            width: 597px;
+        }
+        #lst>.lleft{
+            float: left;
+            width: 59px;
+            border: 1px solid blue;
+        }
+        #lst>.lright{
+            width: 534px;
+            float: left;
+            border: 1px solid blue;
+        }
+        #lst>.lright>h3{
+            margin-top:8px;
+        }
+        #lst>.lright>.imgs{
+            width: 255px;
+            float: left;
+            margin-top:8px;
+        }
+        #lst>.lright>.imgs>img{
+            width: 80px;
+            float: left;
+            margin-bottom:5px;
+            margin-right:5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 分成左右两大部分,右边再分三部分 -->
+    <!-- 布局简单,结构清晰 -->
+    <!-- 将图片尺寸都设置成80px宽度,就可以随意添加图片,即是一个模板,无序修改代码 -->
+    <div id="lst">
+        <div class="lleft">
+            <img src="imgs/img04.png" alt="">
+        </div>
+        <div class="lright">
+            <h3>BlueNileinc</h3>
+            <p>钻石的切割决定了他的闪烁度。如何选择一颗闪花眼睛的钻石？来自美国的Blue Nile 
+                精选级钻石保证了全球TOP1%的切割, 提供圆形、共组方形、绿宝石和上丁方形
+                的完美比例严禁切割, 配有GIA和GCAL双重整数认证, 并确保肉眼无暇, 所有钻石
+                从美国西雅图直邮内地,还有各种戒指托自由选择 !</p>
+            <div class="imgs">
+                    <img src="imgs/img05.png" alt="">
+                    <img src="imgs/img06.png" alt="">
+                    <img src="imgs/img05.png" alt="">
+                    <img src="imgs/img06.png" alt="">
+                    <img src="imgs/img05.png" alt="">
+                    <img src="imgs/img06.png" alt="">
+                    <img src="imgs/img06.png" alt="">
+                    <img src="imgs/img05.png" alt="">
+                    <img src="imgs/img06.png" alt="">
+                    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

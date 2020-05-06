@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tip">
+
+    </div>
+    <div>
+        <input type="text" id="txt">
+    </div>
+    <div>
+            <script>
+                    /*多行注释*/
+                    // 获取指定id的元素
+                    // a = document.getElementById("tip");
+                    // // 设置内部显示内容
+                    // a.innerText="Hello world!";
+                    // 定义一个小写字母的变量
+                    a=1;
+                    // 定义一个大写字母的变量
+                    A=1;
+        
+                    // 定义一个变量
+                    // a1 = 2;  //属于全局变量
+                    // var a2=3;  //页面局部变量,只能在这个页面使用
+                    // var a3, a4, a5;  //定义多个办理,并没有赋值
+                    // a3=4;a4=5;a5=6;  //先定义后赋值
+        
+                    // var a6=a7=a8=0; //定义三个变量初始值都为0
+                    // var a9=10,a10=11; //同时声明并赋值多个变量
+        
+                    // // 定义一个常量
+                    // const PI=3.1415926;
+                    // //保留两位小数
+                    // alert(PI.toFixed(2));
+
+                    // // 定义一个字符变量
+                    // var strName='tgrong'
+                    // var isSave=true
+                    a = document.getElementById("txt");
+                    b = document.getElementById("tip");
+                    b.innerText= a.value;
+
+                </script>
+                <script>
+                    // var a=2;
+                    // console.log(++a)  //3
+                    // console.log(a++); // 2
+                    // console.log(a);   //3  
+
+                    // var b='A',c='a';
+                    // console.log(b.charCodeAt(0));
+                    // console.log(b>a);
+
+                    var a=10,b=20,c=30;
+                    console.log(!(a>b&&b>c||a<b&&c>b))  //false
+
+                </script>
+        <button onclick='a = document.getElementById("txt");b = document.getElementById("tip");b.innerText= a.value;'>点击一下</button>
+        
+    </div>
+</body>
+</html>

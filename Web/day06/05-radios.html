@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #pic{
+            width: 300px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+        #pic input{
+            margin-right: 45px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 写元素
+         写样式
+         写逻辑
+         微调 -->
+    <div id="pic">
+        <div class="img">
+            <img id="img" width='300px' src="imgs/gm1.jpg" alt="">
+        </div>
+        <fieldset>
+            <legend>选择按钮</legend>
+            <!-- name属性的值相同,可以确保单选按钮组相互排斥 -->
+            <input checked type="radio" name="pic" id="pic1"> 
+            <input type="radio" name="pic" id="pic2">
+            <input type="radio" name="pic" id="pic3">
+            <input type="radio" name="pic" id="pic4">
+        </fieldset>
+    </div>
+    <!-- 逻辑 -->
+    <script>
+        var btnPic1 = document.getElementById("pic1");
+        var btnPic2 = document.getElementById("pic2");
+        var btnPic3 = document.getElementById("pic3");
+        var btnPic4 = document.getElementById("pic4");
+        var imgShow = document.getElementById("img")
+        // 绑定元素的单击时间
+        btnPic1.onclick=function(){
+            // 改变图片显示来源,设置 或重置 指定属性名称的值
+            imgShow.setAttribute("src","imgs/gm1.jpg")
+            // imgShow.src="imgs/gm1.jpg"
+        }
+        btnPic2.onclick=function(){
+            imgShow.setAttribute("src","imgs/gm2.jpg")
+            // imgShow.src="imgs/gm2.jpg"
+        }
+        btnPic3.onclick=function(){
+            imgShow.setAttribute("src","imgs/gm3.jpg")
+            // imgShow.src="imgs/gm3.jpg"
+        }
+        btnPic4.onclick=function(){
+            imgShow.setAttribute("src","imgs/gm4.jpg")
+            // imgShow.src="imgs/gm4.jpg"
+        }
+    </script>
+</body>
+</html>
